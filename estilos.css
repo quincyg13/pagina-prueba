@@ -9,13 +9,11 @@ a{
 header{
 	color: #fff;
 	background: #343b54;
-	border: 1px solid red;
 	padding: 0.5em;
 	overflow: hidden;
 	position: relative;
 }
 footer p:first-child{
-	border: 1px solid red;
 	margin-bottom: 0;
 }
 footer p:last-child:before{
@@ -36,19 +34,20 @@ footer{
 header figure
 {
 	float: left;
+	margin: 1em;
 }
 header h1
 {
 	font-size: 1.2em;
 	font-weight: normal;
-	margin: 1.5em 70px 0 0;
+	margin: 0.5em 70px 0 0;
 }
 header #logo img
 {
 	width: 52px;
 	border-right: 1px solid white;
-	margin-right: 0.5em;
 	padding-right: 0.5em;
+	
 }
 header #avatar
 {
@@ -103,10 +102,16 @@ nav ul #publicar_nav
 #contenido .item{
 	background: #fff;
 	border-bottom: 3px solid #22bce0;
-	overflow: hidden;
+	position: relative;
+	min-height: 128px;
+	margin-bottom: 3em;
+
 }
 #contenido .item .autor_item{
 	color: #aaa;
+}
+#contenido .item .datos_item .fecha_item{
+	color: #AAA;
 }
 #contenido .item .datos_item{
 	margin: 1em 1em 0 0;
@@ -131,8 +136,24 @@ nav ul #publicar_nav
 #contenido .item .titulo_item{
 	font-size: 1.2em;
 	font-style: italic;
+	padding: 1em 1em 0 0;
 }
 #contenido .item .titulo_item a {
 	color: #444;
 	text-decoration: none;
+}
+#contenido .item .votacion{
+	margin-top: 3px;
+	position: absolute;
+	border-radius: 0 0 0.5em 0.5em;
+	top: 100%;
+	background: #fff;
+	width: 90%;
+	left: 5%;
+	padding: 0.2em 0.5em
+
+}
+#contenido .item .votacion .comentarios_item,
+#contenido .item .votacion .guardar_item{
+	float: right;
 }
